@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
 
@@ -47,14 +47,70 @@
 
       <section>
         <h2>In-text link</h2>
+
+        <h3>Sample code:</h3>
+        <code>&lt;p&gt; Text text &lt;a href="#"&gt;link&lt;/a&gt; text&lt;/p&gt;</code>
+        
+        <h3>Rendered element:</h3>
+        <p>Text text <a href="#">link</a> text</p>
       </section>
 
       <section>
         <h2>Submit/Reset Buttons</h2>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;button type="submit"&gt;Submit&lt;/button&gt; <br>
+          &lt;button type="reset"&gt;Reset&lt;/button&gt;
+        </code>
+        
+        <h3>Rendered element:</h3>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
       </section>
 
       <section>
         <h2>Text Input Field</h2>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;label for="text-sample"&gt;Text Input Field&lt;/label&gt;<br>
+          &lt;input type="text" id="text-sample" placeholder="Text Input Field"&gt;<br></code>
+
+        <h3>Rendered element:</h3>
+        <label for="text-sample">Text Input Field:</label>
+        <input type="text" id="text-sample" placeholder="Text Input Field">
+      </section>
+
+      <section>
+        <h2>Radio Input Field</h2>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;input type="radio" id="option1" name="radiosample" value="Option 1"&gt;<br>
+          &lt;label for="option1"&gt;Option 1&lt;/label&gt;<br>
+
+          &lt;input type="radio" id="option2" name="radiosample" value="Option 2"&gt;<br>
+          &lt;label for="option2"&gt;Option 2&lt;/label&gt;
+        </code>
+
+        <h3>Rendered element:</h3>
+
+        <input type="radio" id="option1" name="radiosample" value="Option 1">
+        <label for="option1">Option 1</label>
+
+        <input type="radio" id="option2" name="radiosample" value="Option 2">
+        <label for="option2">Option 2</label>
+      </section>
+
+      <section>
+        <h2>Image as Link</h2>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#"&gt;&lt;img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Hades_cover_art.jpg" alt="Hades game cover art, article page"&gt;&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Hades_cover_art.jpg" alt="Hades game cover art, article page"></a>
       </section>
 
     </section>
@@ -67,18 +123,45 @@
 
       <section>
         <h2>Headings</h2>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;h1&gt;Header 1&lt;/h1&gt;<br>
+          &lt;h2&gt;Header 2&lt;/h2&gt;<br>
+          &lt;h3&gt;Header 3&lt;/h3&gt;<br>
+          &lt;h4&gt;Header 4&lt;/h4&gt;
+        </code>
+
+        <h3>Rendered element:</h3>
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+        <h3>Header 3</h3>
+        <h4>Header 4</h4>
       </section>
 
       <section>
         <h2>Paragraphs</h2>
-      </section>
 
-      <section>
-        <h2>Bulleted Lists</h2>
+        <h3>Sample code:</h3>
+        <code>
+          &lt;p&gt;Paragraph text&lt;/p&gt;
+        </code>
+
+        <h3>Rendered element:</h3>
+        <p>Paragraph text</p>
       </section>
 
       <section>
         <h2>Numbered Lists</h2>
+
+        <h3>Sample code:</h3>
+
+        <h3>Rendered element:</h3>
+        <ol>
+          <li>First list item</li>
+          <li>Second list item</li>
+          <li>Third list item</li>
+        </ol>
       </section>
 
     </section>
@@ -91,12 +174,134 @@
 
       <section>
         <h2>Main Navigation</h2>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;nav class="main-nav"&gt;<br>
+            &lt;a class="button" href="#"&gt;Home&lt;/a&gt;<br>
+            &lt;a class="button" href="#"&gt;Shop&lt;/a&gt;<br>
+            &lt;a class="button" href="#"&gt;Subscriptions&lt;/a&gt;<br>
+          &lt;/nav&gt;
+        </code>
+
+        <h3>Rendered element:</h3>
+        <nav class="main-nav">
+          <a class="button" href="#">Home</a>
+          <a class="button" href="#">Shop</a>
+          <a class="button" href="#">Subscriptions</a>
+        </nav>
       </section>
 
       <section>
         <h2>Product Listing</h2>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;a class="product-listing" href="#"&gt;<br>
+            &lt;img src="https://gameinformer.com/sites/default/files/styles/max_325x325/public/2025/03/24/c7934679/362.jpg.webp" alt="Game Informer magazine issue 362 featuring Final Fantasy VII Rebirth, product page"&gt;<br>
+            &lt;p class="product-name"&gt;Game Informer: Issue 362&lt;/p&gt;<br>
+            &lt;p class="product-price"&gt;&lt;b&gt;$13.99&lt;/b&gt;&lt;/p&gt;<br>
+          &lt;/a&gt;
+        </code>
+
+        <h3>Rendered element:</h3>
+
+        <a class="product-listing" href="#">
+          <img src="https://gameinformer.com/sites/default/files/styles/max_325x325/public/2025/03/24/c7934679/362.jpg.webp" alt="Game Informer magazine issue 362 featuring Final Fantasy VII Rebirth, product page">
+          <p class="product-name">Game Informer: Issue 362</p>
+          <p class="product-price"><strong>$13.99</strong></p>
+        </a>
       </section>
 
+      <section>
+        <h2>Payment Form</h2>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;form class="payment-form"&gt;<br>
+            &lt;fieldset id="customer-info"&gt;<br>
+              &lt;label for="name"&gt;Name&lt;/label&gt;<br>
+              &lt;input type="text" id="name" placeholder="Full Name"&gt;<br>
+              
+              &lt;label for="email"&gt;Email&lt;/label&gt;<br>
+              &lt;input type="text" id="email"&gt;<br>
+
+              &lt;label for="address"&gt;Address&lt;/label&gt;<br>
+              &lt;input type="text" id="address" placeholder="Street Address"&gt;<br>
+            &lt;/fieldset&gt;<br>
+
+            &lt;fieldset id="shipping-options"&gt;<br>
+              &lt;input type="radio" id="standard" name="shipping" value="standard"&gt;<br>
+              &lt;label for="option1"&gt;Standard Shipping&lt;/label&gt;<br>
+
+              &lt;input type="radio" id="express" name="shipping" value="express"&gt;<br>
+              &lt;label for="option2"&gt;Express Shipping&lt;/label&gt;<br>
+            &lt;/fieldset&gt;<br>
+
+            &lt;button type="submit"&gt;Submit&lt;/button&gt;<br>
+          &lt;/form&gt;
+        </code>
+
+        <h3>Rendered element:</h3>
+        <form class="payment-form">
+          <fieldset id="customer-info">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Full Name">
+
+            <label for="email">Email</label>
+            <input type="text" id="email">
+
+            <label for="address">Address</label>
+            <input type="text" id="address" placeholder="Street Address">
+          </fieldset>
+
+          <fieldset id="shipping-options">
+            <input type="radio" id="standard" name="shipping" value="standard">
+            <label for="option1">Standard Shipping</label>
+
+            <input type="radio" id="express" name="shipping" value="express">
+            <label for="option2">Express Shipping</label>
+          </fieldset>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Checkout Cart</h2>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;div id="checkout-cart"&gt;<br>
+            &lt;div class="cart-item"&gt;<br>
+              &lt;p&gt;Game Informer&lt;/p&gt;<br>
+              &lt;p&gt;3 Month Subscription&lt;/p&gt;<br>
+              &lt;p&gt;&lt;strong&gt;$29.99&lt;/strong&gt; (1)&lt;/p&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="cart-item"&gt;<br>
+              &lt;p&gt;Game Informer&lt;/p&gt;<br>
+              &lt;p&gt;Single Issue: 362&lt;/p&gt;<br>
+              &lt;p&gt;&lt;strong&gt;$13.99&lt;/strong&gt; (1)&lt;/p&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;p&gt;&lt;strong&gt;Subtotal:  $43.98&lt;/strong&gt;&lt;/p&gt;<br>
+          &lt;/div&gt;        
+        </code>
+
+        <h3>Rendered element:</h3>
+        <div id="checkout-cart">
+          <div class="cart-item">
+            <p>Game Informer</p>
+            <p>3 Month Subscription</p>
+            <p><strong>$29.99</strong> (1)</p>
+          </div>
+          <div class="cart-item">
+            <p>Game Informer</p>
+            <p>Single Issue: 362</p>
+            <p><strong>$13.99</strong> (1)</p>
+          </div>
+          <p><strong>Subtotal:  $43.98</strong></p>
+        </div>
+      </section>
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
 
