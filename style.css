@@ -61,22 +61,29 @@ code {
 /* GRIDS (lifted from Week 2 Flexbox exercise) */
     .container {
         display:flex;
-        flex-wrap:wrap;
+        flex-flow: row wrap;
         justify-content: center;
         gap:1rem;
+        max-width: 81em;
         /* TODO: Add way for elements to be limited to 4 per row*/
     }    
 
         .container .block {
-            height:  280.5px; 
+            width: 19em;
+            height: 19em;
             background-color: #AAA; 
             }
   
         .container .block p {
             padding: 0.5rem; }
 
-    .block {
-        width:181.5px;
+    #grid {
+        display: flex;
+        justify-content: center;
+        max-width: 81em;
+        flex-flow: column wrap;
+        align-items: center;
+        overflow: hidden;
     }
 
 /* CATALOGUE FEATURES */
@@ -87,5 +94,22 @@ code {
         */
     }
     #search-id {
+        width: 20em;
+        height: 2em;
+    }
+    
+    .search-container{
+        display: flex;
+        justify-content: end;
+        margin-bottom: 2em;
+        margin-right: 1em;
+        align-self: flex-end;
+    }
 
+    #catalogue {
+        display: flex;
+        width: 100%;
+        flex-flow: column;
+        align-items: center;
+        overflow: hidden;
     }
