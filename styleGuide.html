@@ -10,7 +10,7 @@
 
   </head>
 
-  <body>
+  <body id="style-guide">
 
     <h1>Style Guide</h1>
     <nav>
@@ -30,7 +30,7 @@
     <section id="interactive_elements">
 
       <!-- Default Button styling section -->
-      <section>
+      <section class="guide-section">
 
         <h2>Navigation Button</h2>
 
@@ -38,14 +38,14 @@
         <p>.button-nav</p>
 
         <h3>Sample code:</h3>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+        <code>&lt;a class="button-nav" href="#"&gt;Default Button&lt;/a&gt;</code>
 
         <h3>Rendered element:</h3>
         <a class="button-nav" href="#">Default Button</a>
 
       </section>
 
-      <section>
+      <section class="guide-section">
         <h2>In-text link</h2>
 
         <h3>Sample code:</h3>
@@ -55,55 +55,55 @@
         <p>Text text <a href="#">link</a> text</p>
       </section>
 
-      <section>
+      <section class="guide-section">
         <h2>Submit/Reset Buttons</h2>
 
         <h3>Sample code:</h3>
         <code>
-          &lt;button type="submit"&gt;Submit&lt;/button&gt; <br>
-          &lt;button type="reset"&gt;Reset&lt;/button&gt;
+          &lt;button id="submit-button" type="submit"&gt;Submit&lt;/button&gt; <br>
+          &lt;button id="reset-button" type="reset"&gt;Reset&lt;/button&gt;
         </code>
         
         <h3>Rendered element:</h3>
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
+        <button id="submit-button" type="submit">Submit</button>
+        <button id="reset-button" type="reset">Reset</button>
       </section>
 
-      <section>
+      <section class="guide-section">
         <h2>Text Input Field</h2>
 
         <h3>Sample code:</h3>
         <code>
           &lt;label for="text-sample"&gt;Text Input Field&lt;/label&gt;<br>
-          &lt;input type="text" id="text-sample" placeholder="Text Input Field"&gt;<br></code>
+          &lt;input type="text" class="text-input" id="text-sample" placeholder="Text Input Field"&gt;<br></code>
 
         <h3>Rendered element:</h3>
         <label for="text-sample">Text Input Field:</label>
-        <input type="text" id="text-sample" placeholder="Text Input Field">
+        <input type="text" class="text-input" id="text-sample" placeholder="Text Input Field">
       </section>
 
-      <section>
+      <section class="guide-section">
         <h2>Radio Input Field</h2>
 
         <h3>Sample code:</h3>
         <code>
-          &lt;input type="radio" id="option1" name="radiosample" value="Option 1"&gt;<br>
+          &lt;input type="radio" class="radio-input" id="option1" name="radiosample" value="Option 1"&gt;<br>
           &lt;label for="option1"&gt;Option 1&lt;/label&gt;<br>
 
-          &lt;input type="radio" id="option2" name="radiosample" value="Option 2"&gt;<br>
+          &lt;input type="radio" class="radio-input" id="option2" name="radiosample" value="Option 2"&gt;<br>
           &lt;label for="option2"&gt;Option 2&lt;/label&gt;
         </code>
 
         <h3>Rendered element:</h3>
 
-        <input type="radio" id="option1" name="radiosample" value="Option 1">
-        <label for="option1">Option 1</label>
+        <input type="radio" class="radio-input" id="option1" name="radiosample" value="Option 1">
+        <label for="option1" class="radio-label">Option 1</label>
 
-        <input type="radio" id="option2" name="radiosample" value="Option 2">
-        <label for="option2">Option 2</label>
+        <input type="radio" class="radio-input" id="option2" name="radiosample" value="Option 2">
+        <label for="option2" class="radio-label">Option 2</label>
       </section>
 
-      <section>
+      <section class="guide-section">
         <h2>Image as Link</h2>
 
         <h3>Sample code:</h3>
@@ -121,7 +121,7 @@
     <!-- TEXT ELEMENTS SECTION // -->
     <section id="text_elements">
 
-      <section>
+      <section class="guide-section">
         <h2>Headings</h2>
 
         <h3>Sample code:</h3>
@@ -139,7 +139,7 @@
         <h4>Header 4</h4>
       </section>
 
-      <section>
+      <section class="guide-section">
         <h2>Paragraphs</h2>
 
         <h3>Sample code:</h3>
@@ -151,11 +151,19 @@
         <p>Paragraph text</p>
       </section>
 
-      <section>
+      <section class="guide-section">
         <h2>Numbered Lists</h2>
 
         <h3>Sample code:</h3>
-
+        <pre>
+          <code>
+&lt;ol&gt;
+  &lt;li&gt;First list item&lt;/li&gt;
+  &lt;li&gt;Second list item&lt;/li&gt;
+  &lt;li&gt;Third list item&lt;/li&gt;
+&lt;/ol&gt; 
+          </code>
+        </pre>
         <h3>Rendered element:</h3>
         <ol>
           <li>First list item</li>
@@ -172,27 +180,29 @@
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
 
-      <section>
+      <section class="guide-section">
         <h2>Main Navigation</h2>
 
         <h3>Sample code:</h3>
-        <code>
-          &lt;nav class="main-nav"&gt;<br>
-            &lt;a class="button" href="#"&gt;Home&lt;/a&gt;<br>
-            &lt;a class="button" href="#"&gt;Shop&lt;/a&gt;<br>
-            &lt;a class="button" href="#"&gt;Subscriptions&lt;/a&gt;<br>
-          &lt;/nav&gt;
-        </code>
+        <pre>
+          <code>
+&lt;nav class="main-nav"&gt;
+  &lt;a class="button" href="#"&gt;Home&lt;/a&gt;
+  &lt;a class="button" href="#"&gt;Shop&lt;/a&gt;
+  &lt;a class="button" href="#"&gt;Subscriptions&lt;/a&gt;
+&lt;/nav&gt;
+          </code>
+        </pre>
 
         <h3>Rendered element:</h3>
         <nav class="main-nav">
-          <a class="button" href="#">Home</a>
-          <a class="button" href="#">Shop</a>
-          <a class="button" href="#">Subscriptions</a>
+          <a class="button-nav" href="#">Home</a>
+          <a class="button-nav" href="#">Shop</a>
+          <a class="button-nav" href="#">Subscriptions</a>
         </nav>
       </section>
 
-      <section>
+      <section class="guide-section">
         <h2>Product Listing</h2>
 
         <h3>Sample code:</h3>
@@ -213,34 +223,36 @@
         </a>
       </section>
 
-      <section>
+      <section class="guide-section">
         <h2>Payment Form</h2>
 
         <h3>Sample code:</h3>
-        <code>
-          &lt;form class="payment-form"&gt;<br>
-            &lt;fieldset id="customer-info"&gt;<br>
-              &lt;label for="name"&gt;Name&lt;/label&gt;<br>
-              &lt;input type="text" id="name" placeholder="Full Name"&gt;<br>
-              
-              &lt;label for="email"&gt;Email&lt;/label&gt;<br>
-              &lt;input type="text" id="email"&gt;<br>
+        <pre role="code">
+          <code>
+&lt;form class="payment-form"&gt;
+  &lt;fieldset id="customer-info"&gt;
+    &lt;label for="name"&gt;Name&lt;/label&gt;
+    &lt;input type="text" id="name" placeholder="Full Name"&gt;
+    
+    &lt;label for="email"&gt;Email&lt;/label&gt;
+    &lt;input type="text" id="email"&gt;
 
-              &lt;label for="address"&gt;Address&lt;/label&gt;<br>
-              &lt;input type="text" id="address" placeholder="Street Address"&gt;<br>
-            &lt;/fieldset&gt;<br>
+    &lt;label for="address"&gt;Address&lt;/label&gt;
+    &lt;input type="text" id="address" placeholder="Street Address"&gt;
+  &lt;/fieldset&gt;
 
-            &lt;fieldset id="shipping-options"&gt;<br>
-              &lt;input type="radio" id="standard" name="shipping" value="standard"&gt;<br>
-              &lt;label for="option1"&gt;Standard Shipping&lt;/label&gt;<br>
+  &lt;fieldset id="shipping-options"&gt;
+    &lt;input type="radio" id="standard" name="shipping" value="standard"&gt;
+    &lt;label for="option1"&gt;Standard Shipping&lt;/label&gt;
 
-              &lt;input type="radio" id="express" name="shipping" value="express"&gt;<br>
-              &lt;label for="option2"&gt;Express Shipping&lt;/label&gt;<br>
-            &lt;/fieldset&gt;<br>
+    &lt;input type="radio" id="express" name="shipping" value="express"&gt;
+    &lt;label for="option2"&gt;Express Shipping&lt;/label&gt;
+  &lt;/fieldset&gt;
 
-            &lt;button type="submit"&gt;Submit&lt;/button&gt;<br>
-          &lt;/form&gt;
-        </code>
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+          </code>
+        </pre>
 
         <h3>Rendered element:</h3>
         <form class="payment-form">
@@ -267,7 +279,7 @@
         </form>
       </section>
 
-      <section>
+      <section class="guide-section">
         <h2>Checkout Cart</h2>
 
         <h3>Sample code:</h3>
