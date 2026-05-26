@@ -36,6 +36,7 @@ h1 {
     font-family: var(--font-display);
     font-weight: 750;
     color: var(--accent-red);
+    user-select: none;
 }
 
 h2 {
@@ -137,6 +138,7 @@ code {
         padding:0.5em;
         height:8em;
         position:absolute;
+        z-index:10;
     }
 
     .title-container {
@@ -150,6 +152,7 @@ code {
     }
 
     .banner {
+        display:flex;
         height: 15em;
         width:65em;
         background-position: center;
@@ -157,6 +160,7 @@ code {
         background-size: cover;
         position: relative;
         margin:auto;
+        flex-direction: column-reverse;
     }
 
 /* GRIDS (lifted from Week 2 Flexbox exercise) */
