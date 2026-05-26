@@ -4,31 +4,55 @@
   box-sizing:border-box;
 }
 
+@font-face {
+  font-family: "DxRuiga";   
+  src: url("fonts/DxRuiga.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Supreme";
+  src: url("fonts/Supreme/Supreme-Regular.otf") format("opentype");
+}
+
+
 :root {
-  --accent-red: #DA3B2C;
+  --accent-red: #C0392B;
   --main-navy: #070016;
   --alt-accent-grey: #9D96B8;
   --dark-green: #2D5016;
+  --tan: #D4A86A;
+  --ivory: #FDF3E3;
+  --font-display: 'DxRuiga', Geneva, Verdana, sans-serif;
+  --font-body: 'Supreme', Geneva, Verdana, sans-serif;
 }
 
 body {
     background-color: var(--main-navy);
+    font-family: var(--font-body);
 }
 
 h1 {
-    font-family: 'Segoe UI', Geneva, Verdana, sans-serif;
-    font-weight:650;
+    font-family: var(--font-display);
+    font-weight: 750;
+    color: var(--accent-red);
 }
 
-:is(h1, h2, h3, h4, h5, h6) {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: aliceblue;
-    font-weight:525;
+h2 {
+    font-family: var(--font-display);
+    color: var(--tan);
+    font-weight: 525;
+}
+
+:is(h3, h4, h5, h6) {
+    font-family: var(--font-display);
+    color: var(--ivory);
+    font-weight: 525;
 }
 
 p, .radio-label, li{
     color:aliceblue;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-body);
     font-weight:100;
 }
 
@@ -51,10 +75,12 @@ code {
     }
     
     .text-input {
+        font-family: var(--font-body);
         border-color: var(--accent-red);
-        background-color: transparent;
+        background-color: var(--ivory);
         color:#AAA;
         width:300px;
+        height: 30px;
         text-align: right;
     }
 
@@ -67,22 +93,27 @@ code {
     }
 
     .button-nav, #submit-button {
-        background-color: var(--accent-red);
-        padding:0.4rem;
+        background-color: var(--dark-green);
+        padding:0.6rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 0.4rem;
         color:aliceblue !important;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight:100;
+        font-family: var(--font-body);
+        font-weight:400;
         text-decoration: none;
+        transition-duration: 300ms;
     }
 
     .button-nav:hover, #submit-button:hover {
-        background-color: #9a2129;
-        transition-duration: 150ms;
+        background-color: #7fb05f;
+        transition-duration: 500ms;
     }
 
     #reset-button {
         background-color: var(--alt-accent-grey);
-        padding:0.4rem;
+        padding:0.6rem;
+        border-radius: 0.4rem;
         color: var(--main-navy) !important;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight:100;
@@ -97,6 +128,10 @@ code {
     a, a:visited {
         color: var(--accent-red);
 
+    }
+
+    a:hover {
+        color: ;
     }
 
     a > img:hover {
@@ -168,7 +203,8 @@ code {
 
 .guide-section {
     padding-bottom: 2em;
-    border-bottom: #DA3B2C 1px solid;
+    padding-top: 2em;
+    border-bottom: var(--ivory) 1px solid;
 }
 
 #interactive_elements, #text_elements, #combined_elements {
