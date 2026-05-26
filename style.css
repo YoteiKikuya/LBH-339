@@ -214,7 +214,7 @@ code {
     }
 
     #cart-shipping {
-        color: aliceblue;
+        color: var(--ivory);
         opacity: 70%;
     }
 
@@ -225,6 +225,12 @@ code {
     #cart-total {
         margin: 0.8em;
         font-size: 1.2em;
+    }
+
+    #cart-total-container {
+        margin-top: 3em;
+        border-top: var(--ivory) 2px solid;
+        padding: 0.5em;
     }
 
     #checkout-split {
