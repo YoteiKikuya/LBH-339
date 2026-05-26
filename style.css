@@ -229,8 +229,7 @@ code {
         display:flex;
         flex-flow: row wrap;
         width: 65em;
-        padding-left:1rem;
-        padding-right:1rem;
+        margin-left:1em;
         justify-self: left;
         margin-top:auto;
     }
@@ -254,16 +253,17 @@ code {
         justify-content: center;
         gap:1rem;
         max-width: 65em;
-    }    
+    }   
 
         .container .block {
             width: 15em;
             height: 19em;
-            background-color: #AAA; 
-            }
+            background-color: #AAA;
+        }
   
         .container .block p {
-            padding: 0.5rem; }
+            padding: 0.5rem; 
+            }
 
     #grid {
         display: flex;
@@ -283,6 +283,7 @@ code {
     #search-id {
         width: 20em;
         height: 2em;
+        margin-right:1em;
     }
     
     @media screen and (min-width:80rem) {
@@ -292,7 +293,6 @@ code {
             width: 100%;
             max-width: 75em;
             margin-bottom: 2em;
-            padding-right: 1rem;
         }
     }
 
@@ -318,6 +318,52 @@ code {
         overflow: hidden;
         top:0;
     }
+
+    .item-card {
+        display: flex;
+        flex-direction: column;
+        width: 15em;
+    }
+
+    #item-info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #cart-button {
+        margin-top:0.5em;
+        width:2em;
+        height:2em;
+        object-fit:fill;
+    }
+
+    .buffer {
+        height:30em;
+        margin-top:5em;
+        width:100%;
+        align-content: left;
+        flex-direction: row;
+    }
+        .buffer #filled-l {
+            background-color: black;
+            padding-right:50%;
+            height:80%;
+            width:60%;
+        }
+
+            #quote {
+                width:65em;
+            }
+
+        .buffer #filled-r {
+            background-color: black;
+            margin-top:-15em;
+            margin-left:50%;
+            height:60%;
+            width:60%;
+            position:relative
+        }
 
 /* STYLE GUIDE */
 
