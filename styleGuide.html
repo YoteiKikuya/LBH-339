@@ -307,35 +307,49 @@
         <h2>Checkout Cart</h2>
 
         <h3>Sample code:</h3>
+        <pre>
         <code>
-          &lt;div id="checkout-cart"&gt;<br>
-            &lt;div class="cart-item"&gt;<br>
-              &lt;p&gt;Game Informer&lt;/p&gt;<br>
-              &lt;p&gt;3 Month Subscription&lt;/p&gt;<br>
-              &lt;p&gt;&lt;strong&gt;$29.99&lt;/strong&gt; (1)&lt;/p&gt;<br>
-            &lt;/div&gt;<br>
-            &lt;div class="cart-item"&gt;<br>
-              &lt;p&gt;Game Informer&lt;/p&gt;<br>
-              &lt;p&gt;Single Issue: 362&lt;/p&gt;<br>
-              &lt;p&gt;&lt;strong&gt;$13.99&lt;/strong&gt; (1)&lt;/p&gt;<br>
-            &lt;/div&gt;<br>
-            &lt;p&gt;&lt;strong&gt;Subtotal:  $43.98&lt;/strong&gt;&lt;/p&gt;<br>
-          &lt;/div&gt;        
+&lt;div id="checkout-cart"&gt;
+  &lt;div class="cart-item"&gt;
+    &lt;div class="cart-item-desc"&gt;
+      &lt;img class="cart-item-image"src="https://gameinformer.com/sites/default/files/styles/max_325x325/public/2025/03/24/c7934679/362.jpg.webp" alt="Game Informer magazine issue 362 featuring Final Fantasy VII Rebirth"&gt;
+      &lt;p class="cart-item-name"&gt;Game Informer: Issue 362 &lt;i class="cart-item-quantity"&gt;(1)&lt;/i&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;p class="cart-item-price"&gt;$13.99&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="cart-item"&gt;
+    &lt;div class="cart-item-desc"&gt;
+      &lt;img class="cart-item-image"src="https://gameinformer.com/sites/default/files/styles/max_325x325/public/2025-03/366.jpg.webp" alt="Game Informer magazine issue 366 featuring Hades II"&gt;
+      &lt;p class="cart-item-name"&gt;Game Informer: Issue 366 &lt;i class="cart-item-quantity"&gt;(1)&lt;/i&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;p class="cart-item-price"&gt;$13.99&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;p id="cart-subtotal"&gt;Subtotal: CAD $27.98&lt;/p&gt;
+  &lt;p id="cart-shipping"&gt;Shipping fee: CAD $10.00&lt;/p&gt;
+  &lt;p id="cart-total"&gt;&lt;strong&gt;Order Total: CAD $37.98&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;       
         </code>
+        </pre>
 
         <h3>Rendered element:</h3>
         <div id="checkout-cart">
           <div class="cart-item">
-            <p>Game Informer</p>
-            <p>3 Month Subscription</p>
-            <p><strong>$29.99</strong> (1)</p>
+            <div class="cart-item-desc">
+              <img class="cart-item-image"src="https://gameinformer.com/sites/default/files/styles/max_325x325/public/2025/03/24/c7934679/362.jpg.webp" alt="Game Informer magazine issue 362 featuring Final Fantasy VII Rebirth">
+              <p class="cart-item-name">Game Informer: Issue 362 <i class="cart-item-quantity">(1)</i></p>
+            </div>
+            <p class="cart-item-price">$13.99</p>
           </div>
           <div class="cart-item">
-            <p>Game Informer</p>
-            <p>Single Issue: 362</p>
-            <p><strong>$13.99</strong> (1)</p>
+            <div class="cart-item-desc">
+              <img class="cart-item-image"src="https://gameinformer.com/sites/default/files/styles/max_325x325/public/2025-03/366.jpg.webp" alt="Game Informer magazine issue 366 featuring Hades II">
+              <p class="cart-item-name">Game Informer: Issue 366 <i class="cart-item-quantity">(1)</i></p>
+            </div>
+            <p class="cart-item-price">$13.99</p>
           </div>
-          <p><strong>Subtotal:  $43.98</strong></p>
+          <p id="cart-subtotal">Subtotal: CAD $27.98</p>
+          <p id="cart-shipping">Shipping fee: CAD $10.00</p>
+          <p id="cart-total"><strong>Order Total: CAD $37.98</strong></p>
         </div>
       </section>
     </section>
