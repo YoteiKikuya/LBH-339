@@ -389,8 +389,24 @@ code {
             width:60%;
         }
 
-            #quote {
-                width:65em;
+            #quote-container {
+                width:40%;
+                padding-top:2em;
+                padding-left:17%;
+                position:absolute;
+                min-width:18em;
+            }
+
+                #quote {
+                    color:white;
+                }
+            /*POLISH!!!!!*/
+            #quote-attribution {
+                width:100%;
+                padding-top:15em;
+                padding-left:50%;
+                position:absolute;
+                min-width:18em;
             }
 
         .buffer #filled-r {
@@ -399,7 +415,8 @@ code {
             margin-left:50%;
             height:60%;
             width:60%;
-            position:relative
+            position:relative;
+            z-index:-1;
         }
 
 /* STYLE GUIDE */
