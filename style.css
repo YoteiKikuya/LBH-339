@@ -379,7 +379,7 @@ code {
         height:30em;
         margin-top:5em;
         width:100%;
-        align-content: left;
+        align-content: flex-start;
         flex-direction: row;
     }
         .buffer #filled-l {
