@@ -96,6 +96,10 @@ code {
         flex-flow: row;
     }
 
+    .payment-form {
+        flex-grow: 6;
+    }
+
     .payment-container {
         display: flex;
         flex-flow: row wrap;
@@ -135,6 +139,10 @@ code {
         transition-duration: 300ms;
     }
 
+    #submit-button {
+        margin-right: 1em;
+    }
+
     .button-nav:hover, #submit-button:hover {
         background-color: #7fb05f;
         transition-duration: 500ms;
@@ -172,6 +180,8 @@ code {
     #checkout-cart {
         background-color: #201635;
         padding: 1em;
+        max-width: 100%;
+        flex-grow: 4;
     }
 
     .cart-item {
@@ -180,7 +190,6 @@ code {
         justify-content: space-between;
         background-color: #201635;
         margin: 1em;
-        width: 40%;
     }
 
     .cart-item-desc {
@@ -190,8 +199,10 @@ code {
     }
 
     .cart-item-image {
-        width: 4em;
+        max-width: 4em;
         margin-right: 1em;
+        align-self: center;
+        flex: 0 0 auto;
     }
 
     .cart-item-quantity {
@@ -203,7 +214,7 @@ code {
     }
 
     #cart-shipping {
-        color: aliceblue;
+        color: var(--ivory);
         opacity: 70%;
     }
 
@@ -214,6 +225,32 @@ code {
     #cart-total {
         margin: 0.8em;
         font-size: 1.2em;
+    }
+
+    #cart-total-container {
+        margin-top: 3em;
+        border-top: var(--ivory) 2px solid;
+        padding: 0.5em;
+    }
+
+    #checkout-split {
+        display: flex;
+        flex-flow: column-reverse;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #submit-reset-container {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        margin: 1em;
+    }   
+
+    @media screen and (min-width:40rem) {
+        #checkout-split {
+            flex-flow: row;
+        }
     }
 
 /* HEADING ELEMENTS */
@@ -367,16 +404,16 @@ code {
 
 /* STYLE GUIDE */
 
-#style-guide {
-    padding: 4em;
-}
+    #style-guide {
+        padding: 4em;
+    }
 
-.guide-section {
-    padding-bottom: 2em;
-    padding-top: 2em;
-    border-bottom: var(--ivory) 1px solid;
-}
+    .guide-section {
+        padding-bottom: 2em;
+        padding-top: 2em;
+        border-bottom: var(--ivory) 1px solid;
+    }
 
-#interactive_elements, #text_elements, #combined_elements {
-    min-width: 60%;
-}
+    #interactive_elements, #text_elements, #combined_elements {
+        min-width: 60%;
+    }
