@@ -231,22 +231,34 @@
           <code>
 &lt;form class="payment-form"&gt;
   &lt;fieldset id="customer-info"&gt;
-    &lt;label for="name"&gt;Name&lt;/label&gt;
-    &lt;input type="text" id="name" placeholder="Full Name"&gt;
-    
-    &lt;label for="email"&gt;Email&lt;/label&gt;
-    &lt;input type="text" id="email"&gt;
+    &lt;legend&gt;Delivery Info&lt;/legend&gt;
+    &lt;label for="payment-name"&gt;Name:&lt;/label&gt;
+    &lt;div class="payment-container" id="payment-name"&gt;
+      &lt;input type="text" class="payment-text two-split" id="first-name" placeholder="First Name"&gt;
+      &lt;input type="text" class="payment-text two-split" id="last-name" placeholder="Last Name"&gt;
+    &lt;/div&gt;
+    &lt;label for="address" &gt;Address:&lt;/label&gt;
+    &lt;input type="text" class="payment-text" id="address" placeholder="123 Example St"&gt;
+    &lt;label for="country" &gt;Country:&lt;/label&gt;
+    &lt;input type="text" class="payment-text" id="country"&gt;
+    &lt;label for="city" &gt;City:&lt;/label&gt;
+    &lt;input type="text" class="payment-text" id="city"&gt;
+    &lt;label for="province" &gt;Province:&lt;/label&gt;
+    &lt;input type="text" class="payment-text" id="province"&gt;
+    &lt;label for="postal-code" &gt;Postal Code:&lt;/label&gt;
+    &lt;input type="text" class="payment-text" id="postal-code"&gt;
+    &lt;label for="email" &gt;Email:&lt;/label&gt;
+    &lt;input type="text" class="payment-text" id="email" placeholder="example@email.com"&gt;
 
-    &lt;label for="address"&gt;Address&lt;/label&gt;
-    &lt;input type="text" id="address" placeholder="Street Address"&gt;
   &lt;/fieldset&gt;
 
   &lt;fieldset id="shipping-options"&gt;
+    &lt;legend&gt;Shipping Options&lt;/legend&gt;
     &lt;input type="radio" id="standard" name="shipping" value="standard"&gt;
-    &lt;label for="option1"&gt;Standard Shipping&lt;/label&gt;
+    &lt;label for="standard"&gt;Standard Shipping&lt;/label&gt;
 
     &lt;input type="radio" id="express" name="shipping" value="express"&gt;
-    &lt;label for="option2"&gt;Express Shipping&lt;/label&gt;
+    &lt;label for="express"&gt;Express Shipping&lt;/label&gt;
   &lt;/fieldset&gt;
 
   &lt;button type="submit"&gt;Submit&lt;/button&gt;
@@ -257,22 +269,34 @@
         <h3>Rendered element:</h3>
         <form class="payment-form">
           <fieldset id="customer-info">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Full Name">
+            <legend>Delivery Info</legend>
+            <label for="payment-name">Name:</label>
+            <div class="payment-container" id="payment-name">
+              <input type="text" class="payment-text two-split" id="first-name" placeholder="First Name">
+              <input type="text" class="payment-text two-split" id="last-name" placeholder="Last Name">
+            </div>
+            <label for="address" >Address:</label>
+            <input type="text" class="payment-text" id="address" placeholder="123 Example St">
+            <label for="country" >Country:</label>
+            <input type="text" class="payment-text" id="country">
+            <label for="city" >City:</label>
+            <input type="text" class="payment-text" id="city">
+            <label for="province" >Province:</label>
+            <input type="text" class="payment-text" id="province">
+            <label for="postal-code" >Postal Code:</label>
+            <input type="text" class="payment-text" id="postal-code">
+            <label for="email" >Email:</label>
+            <input type="text" class="payment-text" id="email" placeholder="example@email.com">
 
-            <label for="email">Email</label>
-            <input type="text" id="email">
-
-            <label for="address">Address</label>
-            <input type="text" id="address" placeholder="Street Address">
           </fieldset>
 
           <fieldset id="shipping-options">
+            <legend>Shipping Options</legend>
             <input type="radio" id="standard" name="shipping" value="standard">
-            <label for="option1">Standard Shipping</label>
+            <label for="standard">Standard Shipping</label>
 
             <input type="radio" id="express" name="shipping" value="express">
-            <label for="option2">Express Shipping</label>
+            <label for="express">Express Shipping</label>
           </fieldset>
 
           <button type="submit">Submit</button>

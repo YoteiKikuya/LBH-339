@@ -51,7 +51,11 @@ h2 {
     font-weight: 525;
 }
 
-p, .radio-label, li{
+fieldset {
+    margin: 1em;
+}
+
+p, .radio-label, li, label{
     color:aliceblue;
     font-family: var(--font-body);
     font-weight:100;
@@ -66,15 +70,48 @@ code {
 
 /* INTERACTIVE ELEMENTS */
     
-    .text-input {
+    .text-input, .payment-text {
         font-family: var(--font-body);
-        border-color: var(--accent-red);
+        border: var(--accent-red) 2px solid;
         background-color: var(--ivory);
-        color:#AAA;
-        width:300px;
-        height: 30px;
+        color:var(--main-navy);
+        max-width:300px;
+        max-height: 30px;
         text-align: right;
         box-shadow:none;
+    }
+
+    legend {
+        color: var(--tan);
+    }
+
+    fieldset {
+        display: flex;
+        flex-flow: column;
+        max-width: 43em;
+        border: var(--ivory) 1px solid;
+    }
+
+    #shipping-options {
+        flex-flow: row;
+    }
+
+    .payment-container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .payment-text {
+        max-width: 50em;
+        max-height: 1.5rem;
+        padding: 1rem;
+        text-align: left;
+        margin: 0.5rem;
+        flex-grow: 1;
+    }
+
+    .two-split {
+        max-width: 24.4em;
     }
 
     .radio-input {
@@ -123,9 +160,9 @@ code {
 
     }
 
-    a:hover {
+    /* a:hover {
         color: ;
-    }
+    } */
 
     a > img:hover {
         border: aliceblue 2px solid;
