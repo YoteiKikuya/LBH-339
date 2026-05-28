@@ -485,3 +485,45 @@ code {
     #interactive_elements, #text_elements, #combined_elements {
         min-width: 60%;
     }
+
+    #color-palette-guide {
+        display: flex;
+        flex-flow: row;
+        width: 20em;
+    }
+
+    .color-container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    #color-container > p {
+        text-align: center;
+        color: var(--ivory);
+    }
+
+    .circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        color: var(--ivory);
+        margin: 0.8em;
+    }
+
+    #main-color {
+        background-color: var(--main-navy);
+        border: var(--ivory) 2px solid;
+    }
+
+    #accent-color {
+        background-color: var(--accent-red);
+    }
+
+    #alt-accent-color {
+        background-color: var(--tan);
+    }
+
+    #light-text-color {
+        background-color: var(--ivory);
+    }
