@@ -120,6 +120,7 @@ code {
 .nav-links a.active {
     color: var(--accent-red);
 }
+
 /* INTERACTIVE ELEMENTS */
     
     .text-input, .payment-text {
@@ -137,6 +138,8 @@ code {
         color: var(--tan);
     }
 
+
+    /* Duplicate declaration -- could this be an issue? */
     fieldset {
         display: flex;
         flex-flow: column;
@@ -361,7 +364,54 @@ code {
         overflow: hidden;
     }
 
+/* LANDING PAGE */
+    .featured {
+        display:grid;
+        position:relative;
+        background:black;
+        height:35rem;
+        width:100%;
+        align-items:center;
+    }
+
+    .featured-text {
+        font-weight:100;
+        font-family: var(--font-body);
+        margin-top: -0.5rem;
+        padding-bottom:3.5rem;
+    }
+
+    .featured-link {
+        text-decoration: none;
+        color:ivory;
+        font-family: var(--font-body);
+    }
+
+    /*This one is intentionally a little high, to make room for the value
+    statement box thingy*/
+    .browse-prompt {
+        position:absolute;
+        bottom:6em;
+        right:0;
+        text-decoration: none;
+        padding:1rem;
+    }
+
+    /* MOBILE */
+
+    @media screen and (max-width:31.8rem) {
+        
+        .featured-text {
+                padding-bottom:-0em;
+            }
+
+        .featured {
+            height:45rem;
+        }
+    }
+
 /* CATALOGUE FEATURES */
+
     #featured-issue {
         /*  TODO: 
             - Fill background of container + offset 
