@@ -18,6 +18,7 @@
 
 :root {
   --accent-red: #C0392B;
+  --umber: #5D3028;
   --main-navy: #070016;
   --alt-accent-grey: #9D96B8;
   --dark-green: #2D5016;
@@ -53,6 +54,11 @@ h2 {
 
 fieldset {
     margin: 1em;
+}
+
+footer {
+    background-color: black;
+    height:15rem;
 }
 
 p, .radio-label, li, label{
@@ -391,11 +397,53 @@ code {
     statement box thingy*/
     .browse-prompt {
         position:absolute;
-        bottom:6em;
+        bottom:3em;
         right:0;
         text-decoration: none;
         padding:1rem;
     }
+
+    .landing-buffer-container {
+        display:flex;
+        flex-flow: row;
+    }
+    
+    .landing-buffer-art {
+        width:50%;
+        height:35rem;
+        background-color:#201635;
+    }
+
+    .landing-buffer-about {
+        width:50%;
+        height:35rem;
+        background-color:var(--umber);
+        margin-top:-3.5rem;
+        z-index:10;
+    }
+
+    .subscriptions {
+        height:fit-content;
+        text-align: center;
+    }
+
+        .subscriptions h1 {
+            color:var(--ivory);
+            margin:4rem;
+        }
+
+    .contact-portal {
+        text-align:center;
+        background-color:var(--umber);
+        height:fit-content;
+        align-items: center;
+    }
+
+        .contact-portal h1 {
+            color:var(--ivory);
+            margin:4rem;
+            padding-top:2em;
+        }
 
     /* MOBILE */
 
@@ -407,6 +455,19 @@ code {
 
         .featured {
             height:45rem;
+        }
+
+        .landing-buffer-container {
+            display:flex;
+            flex-flow: column;
+        }
+
+        .landing-buffer-art {
+            width:100%;
+        }
+
+        .landing-buffer-about {
+            width:100%;
         }
     }
 
