@@ -537,6 +537,10 @@ code {
         object-fit:fill;
     }
 
+    .nav-cart-button {
+        width: 1.5em;
+    }
+
     .buffer {
         height:30em;
         margin-top:5em;
