@@ -503,6 +503,17 @@ code {
         z-index:10;
     }
 
+    .landing-about {
+        color:ivory;
+        margin:4rem;
+        font-size:2.5rem;
+    }
+    .landing-about-body {
+        color:ivory;
+        margin:4rem;
+        font-size:1.5rem;
+    }
+
     .subscriptions {
         height:fit-content;
         text-align: center;
