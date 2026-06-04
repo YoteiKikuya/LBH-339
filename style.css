@@ -52,10 +52,6 @@ h2 {
     font-weight: 525;
 }
 
-fieldset {
-    margin: 1em;
-}
-
 footer {
     background-color: black;
     height:15rem;
@@ -144,9 +140,8 @@ code {
         color: var(--tan);
     }
 
-
-    /* Duplicate declaration -- could this be an issue? */
-    fieldset {
+    #customer-info, #shipping-options {
+        margin: 1em;
         display: flex;
         flex-flow: column;
         max-width: 43em;
@@ -734,3 +729,58 @@ code {
     #light-text-color {
         background-color: var(--ivory);
     }
+
+/* CONTACT FORM */
+
+.contact-text-input {
+    max-height: 11em;
+    max-width: 80vw;
+    flex-grow: 1;
+    margin: 0.5em;
+    text-align: left;
+    padding: 0.8em;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+#contact-fields {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+    border: none;
+    flex: auto;
+    width: 50%
+}
+
+#contact-form {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.text-input-split {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: calc(80vw + 1.3em);
+}
+
+#message {
+    margin-bottom: 2em;
+    resize: none;
+}
+
+/* #contact-header {
+} */
+
+#contact-submit {
+    align-self: center;
+    padding:0.7rem 2rem;
+}
+
+#contact-name {
+    flex-grow: 6;
+}
+
+#contact-email {
+    flex-grow: 4;
+}
