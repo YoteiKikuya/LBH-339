@@ -492,7 +492,8 @@ code {
 
     .landing-buffer-about {
         width:50%;
-        height:35rem;
+        height:fit-content;
+        min-height:35rem;
         background-color:var(--umber);
         margin-top:-3.5rem;
         z-index:10;
@@ -510,9 +511,29 @@ code {
     }
 
     .subscriptions {
+        display:flex;
         height:fit-content;
-        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     }
+
+        .sub-cont {
+            display:flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            gap:10rem;
+            max-width: 65em;
+            align-self:stretch;
+        }
+
+        .sub-cont .sub-box {
+            background-color:var(--accent-red);
+            display:flex;
+            padding:1rem;
+            height:15rem;
+            align-self: flex-end;
+        }
 
         .subscriptions h1 {
             color:var(--ivory);
@@ -627,50 +648,6 @@ code {
     .nav-cart-button {
         width: 1.5em;
     }
-
-    .buffer {
-        height:30em;
-        margin-top:5em;
-        width:100%;
-        align-content: flex-start;
-        flex-direction: row;
-    }
-        .buffer #filled-l {
-            background-color: black;
-            padding-right:50%;
-            height:80%;
-            width:60%;
-        }
-
-            #quote-container {
-                width:40%;
-                padding-top:2em;
-                padding-left:17%;
-                position:absolute;
-                min-width:18em;
-            }
-
-                #quote {
-                    color:white;
-                }
-            /*POLISH!!!!!*/
-            #quote-attribution {
-                width:100%;
-                padding-top:15em;
-                padding-left:50%;
-                position:absolute;
-                min-width:18em;
-            }
-
-        .buffer #filled-r {
-            background-color: black;
-            margin-top:-15em;
-            margin-left:50%;
-            height:60%;
-            width:60%;
-            position:relative;
-            z-index:-1;
-        }
 
 /* STYLE GUIDE */
 
