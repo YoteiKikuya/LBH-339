@@ -538,17 +538,23 @@ code {
             display:flex;
             flex-flow: row wrap;
             justify-content: center;
-            gap:10rem;
+            gap: 1.5rem;
             max-width: 65em;
-            align-self:stretch;
+            width: 100%;
+            padding: 0 2rem 4rem;
         }
 
         .sub-cont .sub-box {
             background-color:var(--accent-red);
             display:flex;
-            padding:1rem;
-            height:15rem;
-            align-self: flex-end;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 2rem;
+            flex: 1 1 16rem;
+            max-width: 20rem;
+            min-height: 12rem;
+            border-radius: 0.5rem;
+            border-top: 3px solid var(--tan);
         }
 
         .subscriptions h1 {
