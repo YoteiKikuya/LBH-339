@@ -223,7 +223,7 @@ code {
     }
 
     .button-nav:hover, #submit-button:hover {
-        background-color: #7fb05f;
+        background-color: var(--tan);
         transition-duration: 500ms;
     }
 
