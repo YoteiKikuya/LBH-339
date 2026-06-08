@@ -31,6 +31,7 @@
 body {
     background-color: var(--main-navy);
     font-family: var(--font-body);
+    margin: 0
 }
 
 h1 {
@@ -46,10 +47,14 @@ h2 {
     font-weight: 525;
 }
 
-:is(h3, h4, h5, h6) {
+:is(h3, h4, h5, h6, .footer-heading) {
     font-family: var(--font-display);
     color: var(--ivory);
     font-weight: 525;
+}
+
+.footer-heading {
+    font-size: 1.17em
 }
 
 footer {
@@ -190,9 +195,9 @@ code {
 
     .button-nav, #submit-button {
         background-color: var(--accent-red);
-        padding:1rem;
+        padding:0.95rem;
         margin:5rem;
-        border-radius: 0.2rem;
+        border-radius: 0.4rem;
         color:aliceblue !important;
         font-family: var(--font-body);
         font-weight:400;
@@ -213,7 +218,6 @@ code {
         font-weight:400;
         text-decoration: none;
         transition-duration: 300ms;
-        width: 6em;
         text-align: center;
         margin-top: 2em;
     }
@@ -300,11 +304,11 @@ code {
         opacity: 75%;
     }
 
-    #cart-subtotal, #cart-tax {
+    #cart-subtotal, .cart-tax {
         margin: 0.5em 1em;
     }
 
-    #cart-tax {
+    .cart-tax {
         color: var(--ivory);
         opacity: 70%;
     }
@@ -645,8 +649,9 @@ code {
 
     .item-card {
         display: flex;
-        flex-direction: column;
-        width: 15em;
+        flex-direction: row;
+        gap: 4em;
+        margin:1em
     }
 
     .item-info {
@@ -686,6 +691,7 @@ code {
         display: flex;
         flex-flow: row;
         width: 20em;
+        gap: 0.9em;
     }
 
     .color-container {

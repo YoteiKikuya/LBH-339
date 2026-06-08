@@ -30,7 +30,7 @@
         </div> 
     </section> -->
     <h1 id="checkout-heading">Checkout</h1>
-    <section id="checkout-split">
+    <div id="checkout-split">
         <form class="payment-form">
             <fieldset id="customer-info">
                 <legend>Delivery Info</legend>
@@ -41,8 +41,8 @@
                 </div>
                 <label for="address" >Address:</label>
                 <input type="text" class="payment-text" id="address" placeholder="123 Example St">
-                <label for="address" >Address Line 2:</label>
-                <input type="text" class="payment-text" id="address">
+                <label for="address-2" >Address Line 2:</label>
+                <input type="text" class="payment-text" id="address-2">
                 <label for="country" >Country:</label>
                 <input type="text" class="payment-text" id="country">
                 <label for="city" >City:</label>
@@ -65,7 +65,7 @@
                 <label for="express">Express Shipping</label>
             </fieldset>
             <div id="submit-reset-container">
-                <a href="../pages/thankorder.html"><button id="submit-button" type="button">Submit</button></a>
+                <a href="../pages/thankorder.html" id="submit-button">Submit</a>
                 <button id="reset-button" type="reset">Reset</button>
             </div>
         </form>
@@ -86,14 +86,14 @@
           </div>
           <div id="cart-total-container">
             <p id="cart-subtotal">Subtotal: CAD $27.98</p>
-            <p id="cart-tax">GST: CAD $1.39</p>
-            <p id="cart-tax">HST: CAD $1.95</p>
+            <p class="cart-tax">GST: CAD $1.39</p>
+            <p class="cart-tax">HST: CAD $1.95</p>
             <p id="cart-total"><strong>Order Total: CAD $31.34</strong></p>
           </div>
         </div>
-    </section>
+    </div>
     <footer>
-        <h3>Quick Links</h3>
+        <p class="footer-heading">Quick Links</p>
         <a href="../pages/styleGuide.html">Style Guide</a>
         <a href="../pages/citations.html">Citations</a>
     </footer>
