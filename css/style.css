@@ -53,8 +53,14 @@ h2 {
 }
 
 footer {
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
     background-color: black;
-    height:15rem;
+    height:fit-content;
+    padding:5rem;
+    padding-top:1rem;
+    margin-top:2rem;
 }
 
 p, .radio-label, li, label{
@@ -183,11 +189,10 @@ code {
     }
 
     .button-nav, #submit-button {
-        background-color: var(--dark-green);
-        padding:0.6rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        border-radius: 0.4rem;
+        background-color: var(--accent-red);
+        padding:1rem;
+        margin:5rem;
+        border-radius: 0.2rem;
         color:aliceblue !important;
         font-family: var(--font-body);
         font-weight:400;
@@ -257,6 +262,7 @@ code {
         background-color: var(--main-navy);
         padding: 1em;
         max-width: 100%;
+        min-height:80vh;
         display: flex;
         flex-flow: column;
         justify-content: space-between;
@@ -294,11 +300,11 @@ code {
         opacity: 75%;
     }
 
-    #cart-subtotal, #cart-shipping {
+    #cart-subtotal, #cart-tax {
         margin: 0.5em 1em;
     }
 
-    #cart-shipping {
+    #cart-tax {
         color: var(--ivory);
         opacity: 70%;
     }
@@ -438,7 +444,12 @@ code {
             padding: 0.5rem; 
             }
 
+            .block img {
+                width:100%;
+            }
+
     .grid {
+        margin-top:2rem;
         display: flex;
         justify-content: center;
         flex-flow: column wrap;
@@ -487,7 +498,8 @@ code {
     .landing-buffer-art {
         width:50%;
         height:35rem;
-        background-color:#201635;
+        overflow:hidden;
+        background-image: url(../assets/game_mosaic.png);
     }
 
     .landing-buffer-about {
@@ -552,6 +564,11 @@ code {
             margin:4rem;
             padding-top:2em;
         }
+
+    .social-icon {
+        max-width: 4rem;
+        overflow:hidden;
+    }
 
     /* MOBILE */
 
@@ -760,4 +777,10 @@ code {
 
 #contact-email {
     flex-grow: 4;
+}
+
+/* Citations */
+#citation-container {
+    margin:15rem;
+    margin-top:5rem;
 }

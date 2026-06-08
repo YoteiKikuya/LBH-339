@@ -41,11 +41,13 @@
                 </div>
                 <label for="address" >Address:</label>
                 <input type="text" class="payment-text" id="address" placeholder="123 Example St">
+                <label for="address" >Address Line 2:</label>
+                <input type="text" class="payment-text" id="address">
                 <label for="country" >Country:</label>
                 <input type="text" class="payment-text" id="country">
                 <label for="city" >City:</label>
                 <input type="text" class="payment-text" id="city">
-                <label for="province" >Province:</label>
+                <label for="province" >State/Province/Territory:</label>
                 <input type="text" class="payment-text" id="province">
                 <label for="postal-code" >Postal Code:</label>
                 <input type="text" class="payment-text" id="postal-code">
@@ -69,25 +71,31 @@
         </form>
         <div id="checkout-cart">
           <div class="cart-item">
-            <div class="cart-item-desc">
-              <img class="cart-item-image" src="https://gameinformer.com/sites/default/files/styles/max_325x325/public/2025/03/24/c7934679/362.jpg.webp" alt="Game Informer magazine issue 362 featuring Final Fantasy VII Rebirth">
-              <p class="cart-item-name">Game Informer: Issue 362 <i class="cart-item-quantity">(1)</i></p>
-            </div>
+                <div class="cart-item-desc">
+                    <img class="cart-page-item-image" src="../assets/issues/iz_apr26.png" alt="IndieZine: April 2026">
+                    <p class="cart-item-name">IndieZine: April 2026 <i class="cart-item-quantity">(1)</i></p>
+                </div>
             <p class="cart-item-price">$13.99</p>
           </div>
           <div class="cart-item">
-            <div class="cart-item-desc">
-              <img class="cart-item-image" src="https://gameinformer.com/sites/default/files/styles/max_325x325/public/2025-03/366.jpg.webp" alt="Game Informer magazine issue 366 featuring Hades II">
-              <p class="cart-item-name">Game Informer: Issue 366 <i class="cart-item-quantity">(1)</i></p>
-            </div>
+                <div class="cart-item-desc">
+                    <img class="cart-page-item-image" src="../assets/issues/iz_feb26.png" alt="IndieZine February 2026 Featuring Mewgenics">
+                    <p class="cart-item-name">IndieZine: February 2026 <i class="cart-item-quantity">(1)</i></p>
+                </div>
             <p class="cart-item-price">$13.99</p>
           </div>
           <div id="cart-total-container">
             <p id="cart-subtotal">Subtotal: CAD $27.98</p>
-            <p id="cart-shipping">Shipping fee: CAD $10.00</p>
-            <p id="cart-total"><strong>Order Total: CAD $37.98</strong></p>
+            <p id="cart-tax">GST: CAD $1.39</p>
+            <p id="cart-tax">HST: CAD $1.95</p>
+            <p id="cart-total"><strong>Order Total: CAD $31.34</strong></p>
           </div>
         </div>
     </section>
+    <footer>
+        <h3>Quick Links</h3>
+        <a href="../pages/styleGuide.html">Style Guide</a>
+        <a href="../pages/citations.html">Citations</a>
+    </footer>
 </body>
 </html>
