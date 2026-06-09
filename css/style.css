@@ -626,6 +626,13 @@ code {
         max-width: 4rem;
         overflow:hidden;
     }
+    
+    .social-item-card {
+        display: flex;
+        flex-direction: row;
+        gap: 4em;
+        margin:1em;
+    }
 
     /* MOBILE */
 
