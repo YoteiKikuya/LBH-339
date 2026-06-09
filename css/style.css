@@ -587,6 +587,11 @@ code {
         cursor: pointer
     }
 
+    .sub-box > .button-nav:hover {
+        background-color: var(--ivory);
+        color: var(--main-navy) !important;
+    }
+
     .sub-line {
         width: 95%;
         border-top: 2px var(--ivory) solid;
