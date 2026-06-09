@@ -539,33 +539,74 @@ code {
         justify-content: space-between;
     }
 
-        .sub-cont {
-            display:flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            gap: 1.5rem;
-            max-width: 65em;
-            width: 100%;
-            padding: 0 2rem 4rem;
-        }
+    .sub-cont {
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 2rem;
+        max-width: 75em;
+        width: 100vw;
+        padding: 0 2rem 4rem;
+    }
 
-        .sub-cont .sub-box {
-            background-color:var(--accent-red);
-            display:flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 2rem;
-            flex: 1 1 16rem;
-            max-width: 20rem;
-            min-height: 12rem;
-            border-radius: 0.5rem;
-            border-top: 3px solid var(--tan);
-        }
+    .sub-cont .sub-box {
+        background-color:var(--accent-red);
+        display:flex;
+        flex-direction: column;
+        padding: 2rem;
+        flex: 1 1 16rem;
+        max-width: 18rem;
+        min-height: 24rem;
+        border-radius: 0.5rem;
+        /* border: 3px solid var(--accent-red); */
+        border-top: 3px solid var(--tan);
+        align-items: center;
+        color: var(--ivory);
+        flex: auto;
+    }
 
-        .subscriptions h1 {
-            color:var(--ivory);
-            margin:4rem;
-        }
+    .subscriptions h1 {
+        color:var(--ivory);
+        margin:4rem;
+    }
+
+    .sub-box > ul {
+        all: unset;
+    }
+
+    .sub-box > ul > li {
+        margin-bottom: 0.7em;
+        color: var(--ivory);
+    }
+
+    .sub-box > .button-nav {
+        margin: 2em 0.5em 0.5em 0.5em;
+        padding: 0.7em;
+        background-color: var(--tan);
+        cursor: pointer
+    }
+
+    .sub-line {
+        width: 95%;
+        border-top: 2px var(--ivory) solid;
+        margin: 1.5em 0;
+    }
+
+    .sub-box > h2, .sub-box > p {
+        margin: 0.4em 0;
+        color: var(--ivory);
+    }
+
+    .sub-box > p {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    
+    .sub-discount-text {
+        opacity: 70%;
+        text-decoration: line-through;
+        text-decoration-style: solid;
+    }
 
     .contact-portal {
         text-align:center;
