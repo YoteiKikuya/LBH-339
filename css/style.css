@@ -65,7 +65,6 @@ footer {
     height:fit-content;
     padding:5rem;
     padding-top:1rem;
-    margin-top:2rem;
 }
 
 p, .radio-label, li, label{
@@ -795,6 +794,115 @@ code {
 
 #contact-email {
     flex-grow: 4;
+}
+
+/* ITEM DETAILS */
+
+.details-main {
+    display:flex;
+    height:fit-content;
+}
+
+.preview-container {
+    display:flex;
+    min-height:50em;
+    height:fit-content;
+    width:60%;
+    align-items: center;
+}
+
+    .mag-images {
+        display:flex;
+        margin: 5em;
+        width:100%;
+        justify-content: center;        
+        flex-flow: row wrap;
+    }
+
+        .preview-block {
+            display:flex;
+            min-width:26em;
+            height:34.2em;
+            background-color: #AAA;
+            margin:0.5em;
+        }
+
+.info-container {
+    display:flex;
+    background-color: #201635;
+    flex-direction: column;
+    height:fit-content;
+    width:40%;
+    padding:3em;
+    padding-top:1em;
+}
+
+#infopage-cart {
+    margin:0;
+    width:30%;
+    min-width:fit-content;
+}
+
+.comment-area {
+    display:flex;
+    flex-direction:column;
+    height:12em;
+    max-width:100%;
+}
+
+    .comment-input {
+        display:flex;
+        text-align: left;
+        margin:2em;
+        margin-left:0;
+        min-width:100%;
+        max-width:100%;
+        height:8em;
+        resize:none;
+    }
+
+    #comment-submit {
+        display:flex;
+        width:10%;
+        margin:0;
+        margin-bottom:1em;
+        min-width:fit-content;
+        margin-left:auto;
+    }
+
+    .username {
+        margin-bottom:0;
+    }
+
+.comment-container {
+    display:flex;
+    flex-direction: column;
+    padding-left:5%;
+    background-color: #070016;
+    outline:var(--accent-red);
+    height:fit-content;
+    width:100%;
+    outline: var(--accent-red);
+    margin-bottom:1em;
+}
+
+    .comment-verify {
+        font-style:italic;
+        color:#78738d;
+    }
+
+@media screen and (max-width:52rem) {
+    .details-main {
+        flex-direction: column-reverse;
+    }
+
+    .preview-container {
+        width:100%;
+    }
+
+    .info-container {
+        width:100%;
+    }
 }
 
 /* Citations */
