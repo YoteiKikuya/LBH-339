@@ -538,49 +538,53 @@
         </div>
       </section>
       <section class="guide-section">
-        <h2>Contact Portal</h2>
+        <h2>Footer Contact Portal</h2>
 
         <h3>Sample code:</h3>
         <pre>
         <code>
-&lt;section class="contact-portal"&gt;
-  &lt;h1 class="plan-heading"&gt;
-      Get in touch!
-  &lt;/h1&gt;
-  &lt;a class="button-nav" href="contact.html"&gt;
-      Contact Portal
-  &lt;/a&gt;
-  &lt;div class="grid"&gt;
-      &lt;div class="container"&gt;
-          &lt;div class="social-item-card"&gt;
-            &lt;img class="social-icon" src="../assets/youtube.png" alt="Youtube logo, Indiezine Youtube page"&gt;
-            &lt;img class="social-icon" src="../assets/insta.png" alt="Instagram logo, Indiezine Instagram page"&gt;
-            &lt;img class="social-icon" src="../assets/discord.png" alt="Discord logo, Indiezine Discord server"&gt;
-          &lt;/div&gt;
+&lt;footer&gt;
+  &lt;div class="footer-left"&gt;
+      &lt;p class="footer-heading"&gt;Get in touch!&lt;/p&gt;
+      &lt;a class="button-nav" href="pages/contact.html" style="margin: 0 0 2rem 0;"&gt;
+          Contact Form
+      &lt;/a&gt;
+      &lt;div class="footer-socials"&gt;
+          &lt;a href="#"&gt;&lt;img class="social-icon" src="../assets/twitter.png" alt="Twitter/X"&gt;&lt;/a&gt;
+          &lt;a href="#"&gt;&lt;img class="social-icon" src="../assets/insta.png" alt="Instagram"&gt;&lt;/a&gt;
+          &lt;a href="#"&gt;&lt;img class="social-icon" src="../assets/discord.png" alt="Discord"&gt;&lt;/a&gt;
+          &lt;a href="#"&gt;&lt;img class="social-icon" src="../assets/youtube.png" alt="YouTube"&gt;&lt;/a&gt;
       &lt;/div&gt;
   &lt;/div&gt;
-&lt;/section&gt;   
+  &lt;div class="footer-right"&gt;
+      &lt;a href="rack.html"&gt;Subscribe Now&lt;/a&gt;
+      &lt;a href="citations.html"&gt;Citations&lt;/a&gt;
+      &lt;a href="styleGuide.html"&gt;Style Guide&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;  
         </code>
         </pre>
 
         <h3>Rendered element:</h3>
-        <section class="contact-portal">
-          <h1 class="plan-heading">
-              Get in touch!
-          </h1>
-          <a class="button-nav" href="contact.html">
-              Contact Portal
-          </a>
-          <div class="grid">
-              <div class="container">
-                  <div class="social-item-card">
-                    <img class="social-icon" src="../assets/youtube.png" alt="Youtube logo, Indiezine Youtube page">
-                    <img class="social-icon" src="../assets/insta.png" alt="Instagram logo, Indiezine Instagram page">
-                    <img class="social-icon" src="../assets/discord.png" alt="Discord logo, Indiezine Discord server">
-                  </div>
-              </div>
-          </div>
-        </section>
+        <footer>
+        <div class="footer-left">
+            <p class="footer-heading">Get in touch!</p>
+            <a class="button-nav" href="pages/contact.html" style="margin: 0 0 2rem 0;">
+                Contact Form
+            </a>
+            <div class="footer-socials">
+                <a href="#"><img class="social-icon" src="../assets/twitter.png" alt="Twitter/X"></a>
+                <a href="#"><img class="social-icon" src="../assets/insta.png" alt="Instagram"></a>
+                <a href="#"><img class="social-icon" src="../assets/discord.png" alt="Discord"></a>
+                <a href="#"><img class="social-icon" src="../assets/youtube.png" alt="YouTube"></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <a href="rack.html">Subscribe Now</a>
+            <a href="citations.html">Citations</a>
+            <a href="styleGuide.html">Style Guide</a>
+        </div>
+        </footer>
       </section>
       <section class="guide-section">
         <h2>Contact Form</h2>
@@ -685,6 +689,97 @@
             </a>
         </div>
       </section>
+      <section class="guide-section">
+        <h2>Issue Info</h2>
+
+        <h3>Sample code:</h3>
+        <pre>
+        <code>
+&lt;section class="info-container"&gt;
+    &lt;h1&gt;
+        May 2026
+    &lt;/h1&gt;
+        &lt;h2 class="featured-text"&gt;
+            An exclusive look at the future of Subnautica 2, 15 cool secrets in
+            newly released Oddcore, and much more...
+        &lt;/h2&gt;
+    &lt;a class="button-nav" id="infopage-cart"&gt;
+        Add to Cart
+    &lt;/a&gt;
+    &lt;h2&gt;
+        Comments
+    &lt;/h2&gt;
+    &lt;div class="comment-area"&gt;
+        &lt;textarea class="comment-input" placeholder="Leave a comment"&gt;
+        &lt;/textarea&gt;
+        &lt;a class="button-nav" id="comment-submit"&gt;
+            Post
+        &lt;/a&gt;  &gt;
+    &lt;/div&gt;
+    &lt;div class="comment-container"&gt;
+        &lt;h3 class="username"&gt;LemonPusher&lt;/h3&gt;
+        &lt;p&gt;It's so cool it's so wow 10/10&lt;/p&gt;
+        &lt;p class="comment-verify"&gt;Verified Purchase&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="comment-container"&gt;
+        &lt;h3 class="username"&gt;mister_mule33&lt;/h3&gt;
+        &lt;p&gt;step back, this core is getting odd&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="comment-container"&gt;
+        &lt;h3 class="username"&gt;springtraplover.2013&lt;/h3&gt;
+        &lt;p&gt;This was an incredibly enlightening breathtaking engaging
+            inspiring profound intriguing terrifying delicious handsome
+            thought-provoking hilarious decadent aromatic well-crafted
+            creative witty glorious read.
+        &lt;/p&gt;
+        &lt;p class="comment-verify"&gt;Verified Purchase&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/section&gt;   
+        </code>
+        </pre>
+
+        <h3>Rendered element:</h3>
+        <section class="info-container">
+            <h1>
+                May 2026
+            </h1>
+                <h2 class="featured-text">
+                    An exclusive look at the future of Subnautica 2, 15 cool secrets in
+                    newly released Oddcore, and much more...
+                </h2>
+            <a class="button-nav" id="infopage-cart">
+                Add to Cart
+            </a>
+            <h2>
+                Comments
+            </h2>
+            <div class="comment-area">
+                <textarea class="comment-input" placeholder="Leave a comment">
+                </textarea>
+                <a class="button-nav" id="comment-submit">
+                    Post
+                </a>  
+            </div>
+            <div class="comment-container">
+                <h3 class="username">LemonPusher</h3>
+                <p>It's so cool it's so wow 10/10</p>
+                <p class="comment-verify">Verified Purchase</p>
+            </div>
+            <div class="comment-container">
+                <h3 class="username">mister_mule33</h3>
+                <p>step back, this core is getting odd</p>
+            </div>
+            <div class="comment-container">
+                <h3 class="username">springtraplover.2013</h3>
+                <p>This was an incredibly enlightening breathtaking engaging
+                    inspiring profound intriguing terrifying delicious handsome
+                    thought-provoking hilarious decadent aromatic well-crafted
+                    creative witty glorious read.
+                </p>
+                <p class="comment-verify">Verified Purchase</p>
+            </div>
+        </section>
+      </section>
     </div>
     <!-- // COMBINED ELEMENTS SECTION -->
 
@@ -770,8 +865,9 @@
         </div>
     </div>
     <div class="footer-right">
-        <a href="pages/rack.html">Subscribe Now</a>
-        <a href="pages/citations.html">Citations</a>
+        <a href="rack.html">Subscribe Now</a>
+        <a href="citations.html">Citations</a>
+        <a href="styleGuide.html">Style Guide</a>
     </div>
   </body>
 </html>
