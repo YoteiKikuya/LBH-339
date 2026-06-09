@@ -434,8 +434,8 @@ code {
         display:flex;
         flex-flow: row wrap;
         justify-content: center;
-        gap:1rem;
-        max-width: 65em;
+        gap: 4rem;
+        max-width: 80em;
     }   
 
         .container .block {
@@ -702,15 +702,19 @@ code {
 
     .item-card {
         display: flex;
-        flex-direction: row;
-        gap: 4em;
-        margin:1em
+        flex-direction: column;
+        row-gap: 5em;
+        gap: 2em;
+        margin:0;
     }
 
     .item-info {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        flex-wrap: wrap;
+        align-items: center;
+        padding: 0.5em 0.25em;
+        flex-wrap: nowrap;
     }
 
     .cart-button {
@@ -749,8 +753,11 @@ code {
 
     .color-container {
         display: flex;
-        flex-flow: column;
+        flex-flow: row wrap;
+        gap: 1.5rem;
+        max-width: 75em;
         align-items: center;
+        width: 100%;
     }
 
     #color-container > p {
