@@ -301,6 +301,7 @@ code {
 
     .cart-item-quantity {
         opacity: 75%;
+        cursor: pointer;
     }
 
     #cart-subtotal, .cart-tax {
@@ -780,6 +781,11 @@ code {
 
     #light-text-color {
         background-color: var(--ivory);
+    }
+
+    .guide-item-example {
+        display: inline-block;
+        width: 15em !important;
     }
 
 /* CONTACT FORM */
