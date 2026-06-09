@@ -54,17 +54,37 @@ h2 {
 }
 
 .footer-heading {
-    font-size: 1.17em
+    font-size: 2em
 }
 
 footer {
     display:flex;
-    flex-direction: column;
-    gap:0.5rem;
-    background-color: black;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #411410;
     height:fit-content;
-    padding:5rem;
-    padding-top:1rem;
+    padding: 3rem 4rem;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-end;
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0.5rem;
 }
 
 p, .radio-label, li, label{
@@ -202,6 +222,7 @@ code {
         font-weight:400;
         text-decoration: none;
         transition-duration: 300ms;
+        text-align: center;
     }
 
     #submit-button {
@@ -483,7 +504,7 @@ code {
 
     .featured-text {
         font-weight:100;
-        font-family: var(--font-body);
+        font-family: var(--font-display);
         margin-top: -0.5rem;
         padding-bottom:3.5rem;
     }
