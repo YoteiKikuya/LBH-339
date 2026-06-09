@@ -322,6 +322,7 @@ code {
 
     .cart-item-quantity {
         opacity: 75%;
+        cursor: pointer;
     }
 
     #cart-subtotal, .cart-tax {
@@ -607,6 +608,11 @@ code {
         cursor: pointer
     }
 
+    .sub-box > .button-nav:hover {
+        background-color: var(--ivory);
+        color: var(--main-navy) !important;
+    }
+
     .sub-line {
         width: 95%;
         border-top: 2px var(--ivory) solid;
@@ -645,6 +651,13 @@ code {
     .social-icon {
         max-width: 4rem;
         overflow:hidden;
+    }
+    
+    .social-item-card {
+        display: flex;
+        flex-direction: row;
+        gap: 4em;
+        margin:1em;
     }
 
     /* MOBILE */
@@ -808,6 +821,11 @@ code {
 
     #light-text-color {
         background-color: var(--ivory);
+    }
+
+    .guide-item-example {
+        display: inline-block;
+        width: 15em !important;
     }
 
 /* CONTACT FORM */

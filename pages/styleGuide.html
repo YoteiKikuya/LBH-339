@@ -17,8 +17,8 @@
     </div>
     <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../rack.html">The Rack</a></li>
-        <li><a href="../pages/contact.html">Contact</a></li>
+        <li><a href="rack.html">The Rack</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li><a href="cart.html"><img class="nav-cart-button" src="../assets/cart.png" alt="Shopping cart icon, checkout page"></a></li>
     </ul>
     </nav>
@@ -118,10 +118,18 @@
         <h2>Image as Link</h2>
 
         <h3>Sample code:</h3>
-        <code>&lt;a href="https://store.steampowered.com/app/1145360/Hades/" target="_blank"&gt;&lt;img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Hades_cover_art.jpg" alt="Hades game cover art, article page"&gt;&lt;/a&gt;</code>
+        <pre>
+        <code>
+&lt;a class="block guide-item-example" href="../issues/may-2026"&gt;   
+  &lt;img src="../assets/issues/iz_may26.png" alt="Indiezine: May 2026, product page"&gt;
+&lt;/a&gt;
+        </code>
+        </pre>
 
         <h3>Rendered element:</h3>
-        <a href="https://store.steampowered.com/app/1145360/Hades/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Hades_cover_art.jpg" alt="Hades game cover art, article page"></a>
+        <a class="block guide-item-example" href="../issues/may-2026">    
+          <img src="../assets/issues/iz_may26.png" alt="Indiezine: May 2026, product page">
+        </a>
       </section>
 
     </div>
@@ -197,19 +205,31 @@
         <h3>Sample code:</h3>
         <pre>
           <code>
-&lt;nav class="main-nav"&gt;
-  &lt;a class="button" href="#"&gt;Home&lt;/a&gt;
-  &lt;a class="button" href="#"&gt;Shop&lt;/a&gt;
-  &lt;a class="button" href="#"&gt;Subscriptions&lt;/a&gt;
+&lt;nav id="main-nav"&gt;
+  &lt;div class="logo-container"&gt;
+      &lt;a class="logo-image" href="../index.html"&gt;&lt;img src="../assets/lbh_logo.png" alt="LBH Logo"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;ul class="nav-links"&gt;
+      &lt;li&gt;&lt;a href="../index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="../pages/rack.html"&gt;The Rack&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="../pages/contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="../pages/cart.html"&gt;&lt;img class="nav-cart-button" src="../assets/cart.png" alt="Shopping cart icon, checkout page"&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/nav&gt;
           </code>
         </pre>
 
         <h3>Rendered element:</h3>
-        <nav class="main-nav">
-          <a class="button-nav" href="#">Home</a>
-          <a class="button-nav" href="#">Shop</a>
-          <a class="button-nav" href="#">Subscriptions</a>
+        <nav id="main-nav">
+          <div class="logo-container">
+              <a class="logo-image" href="../index.html"><img src="../assets/lbh_logo.png" alt="LBH Logo"></a>
+          </div>
+          <ul class="nav-links">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../pages/rack.html">The Rack</a></li>
+              <li><a href="../pages/contact.html">Contact</a></li>
+              <li><a href="../pages/cart.html"><img class="nav-cart-button" src="../assets/cart.png" alt="Shopping cart icon, checkout page"></a></li>
+          </ul>
         </nav>
       </section>
 
@@ -217,21 +237,31 @@
         <h2>Product Listing</h2>
 
         <h3>Sample code:</h3>
+        <pre>
         <code>
-          &lt;a class="product-listing" href="#"&gt;<br>
-            &lt;img src="https://gameinformer.com/sites/default/files/styles/max_325x325/public/2025/03/24/c7934679/362.jpg.webp" alt="Game Informer magazine issue 362 featuring Final Fantasy VII Rebirth, product page"&gt;<br>
-            &lt;p class="product-name"&gt;Game Informer: Issue 362&lt;/p&gt;<br>
-            &lt;p class="product-price"&gt;&lt;b&gt;$13.99&lt;/b&gt;&lt;/p&gt;<br>
-          &lt;/a&gt;
+&lt;div class="item-card"&gt;
+    &lt;a class="block" href="../issues/may-2026"&gt;    
+        &lt;img src="../assets/issues/iz_may26.png" alt="Indiezine: May 2026, product page"&gt;
+    &lt;/a&gt;
+    &lt;div class="item-info"&gt;
+        &lt;div&gt;&lt;p&gt;$13.99 CAD&lt;/p&gt;&lt;/div&gt;
+        &lt;!-- Cart icon from: https://www.clipartmax.com/max/m2i8K9A0N4d3G6N4/ --&gt; 
+        &lt;img class="cart-button" src="../assets/cart.png" alt="Shopping cart icon"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
         </code>
-
+        </pre>
         <h3>Rendered element:</h3>
-
-        <a class="product-listing" href="#">
-          <img src="https://gameinformer.com/sites/default/files/styles/max_325x325/public/2025/03/24/c7934679/362.jpg.webp" alt="Game Informer magazine issue 362 featuring Final Fantasy VII Rebirth, product page">
-          <p class="product-name">Game Informer: Issue 362</p>
-          <p class="product-price"><strong>$13.99</strong></p>
-        </a>
+        <div class="item-card">
+            <a class="block guide-item-example" href="../issues/may-2026">    
+                <img src="../assets/issues/iz_may26.png" alt="Indiezine: May 2026, product page">
+            </a>
+            <div class="item-info">
+                <div><p>$13.99 CAD</p></div>
+                <!-- Cart icon from: https://www.clipartmax.com/max/m2i8K9A0N4d3G6N4/ --> 
+                <img class="cart-button" src="../assets/cart.png" alt="Shopping cart icon">
+            </div>
+        </div>
       </section>
 
       <section class="guide-section">
@@ -322,23 +352,24 @@
         <code>
 &lt;div id="checkout-cart"&gt;
   &lt;div class="cart-item"&gt;
-    &lt;div class="cart-item-desc"&gt;
-      &lt;img class="cart-item-image" src="https://gameinformer.com/sites/default/files/styles/max_325x325/public/2025/03/24/c7934679/362.jpg.webp" alt="Game Informer magazine issue 362 featuring Final Fantasy VII Rebirth"&gt;
-      &lt;p class="cart-item-name"&gt;Game Informer: Issue 362 &lt;i class="cart-item-quantity"&gt;(1)&lt;/i&gt;&lt;/p&gt;
-    &lt;/div&gt;
+        &lt;div class="cart-item-desc"&gt;
+            &lt;img class="cart-page-item-image" src="../assets/issues/iz_apr26.png" alt="IndieZine: April 2026"&gt;
+            &lt;p class="cart-item-name"&gt;IndieZine: April 2026 &lt;i class="cart-item-quantity"&gt;(1)&lt;/i&gt;&lt;/p&gt;
+        &lt;/div&gt;
     &lt;p class="cart-item-price"&gt;$13.99&lt;/p&gt;
   &lt;/div&gt;
   &lt;div class="cart-item"&gt;
-    &lt;div class="cart-item-desc"&gt;
-      &lt;img class="cart-item-image" src="https://gameinformer.com/sites/default/files/styles/max_325x325/public/2025-03/366.jpg.webp" alt="Game Informer magazine issue 366 featuring Hades II"&gt;
-      &lt;p class="cart-item-name"&gt;Game Informer: Issue 366 &lt;i class="cart-item-quantity"&gt;(1)&lt;/i&gt;&lt;/p&gt;
-    &lt;/div&gt;
+        &lt;div class="cart-item-desc"&gt;
+            &lt;img class="cart-page-item-image" src="../assets/issues/iz_feb26.png" alt="IndieZine February 2026 Featuring Mewgenics"&gt;
+            &lt;p class="cart-item-name"&gt;IndieZine: February 2026 &lt;i class="cart-item-quantity"&gt;(1)&lt;/i&gt;&lt;/p&gt;
+        &lt;/div&gt;
     &lt;p class="cart-item-price"&gt;$13.99&lt;/p&gt;
   &lt;/div&gt;
   &lt;div id="cart-total-container"&gt;
     &lt;p id="cart-subtotal"&gt;Subtotal: CAD $27.98&lt;/p&gt;
-    &lt;p id="cart-shipping"&gt;Shipping fee: CAD $10.00&lt;/p&gt;
-    &lt;p id="cart-total"&gt;&lt;strong&gt;Order Total: CAD $37.98&lt;/strong&gt;&lt;/p&gt;
+    &lt;p class="cart-tax"&gt;GST: CAD $1.39&lt;/p&gt;
+    &lt;p class="cart-tax"&gt;HST: CAD $1.95&lt;/p&gt;
+    &lt;p id="cart-total"&gt;&lt;strong&gt;Order Total: CAD $31.34&lt;/strong&gt;&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;       
         </code>
@@ -347,24 +378,311 @@
         <h3>Rendered element:</h3>
         <div id="checkout-cart">
           <div class="cart-item">
-            <div class="cart-item-desc">
-              <img class="cart-item-image" src="https://gameinformer.com/sites/default/files/styles/max_325x325/public/2025/03/24/c7934679/362.jpg.webp" alt="Game Informer magazine issue 362 featuring Final Fantasy VII Rebirth">
-              <p class="cart-item-name">Game Informer: Issue 362 <i class="cart-item-quantity">(1)</i></p>
-            </div>
+                <div class="cart-item-desc">
+                    <img class="cart-page-item-image" src="../assets/issues/iz_apr26.png" alt="IndieZine: April 2026">
+                    <p class="cart-item-name">IndieZine: April 2026 <i class="cart-item-quantity">(1)</i></p>
+                </div>
             <p class="cart-item-price">$13.99</p>
           </div>
           <div class="cart-item">
-            <div class="cart-item-desc">
-              <img class="cart-item-image" src="https://gameinformer.com/sites/default/files/styles/max_325x325/public/2025-03/366.jpg.webp" alt="Game Informer magazine issue 366 featuring Hades II">
-              <p class="cart-item-name">Game Informer: Issue 366 <i class="cart-item-quantity">(1)</i></p>
-            </div>
+                <div class="cart-item-desc">
+                    <img class="cart-page-item-image" src="../assets/issues/iz_feb26.png" alt="IndieZine February 2026 Featuring Mewgenics">
+                    <p class="cart-item-name">IndieZine: February 2026 <i class="cart-item-quantity">(1)</i></p>
+                </div>
             <p class="cart-item-price">$13.99</p>
           </div>
           <div id="cart-total-container">
             <p id="cart-subtotal">Subtotal: CAD $27.98</p>
-            <p id="cart-shipping">Shipping fee: CAD $10.00</p>
-            <p id="cart-total"><strong>Order Total: CAD $37.98</strong></p>
+            <p class="cart-tax">GST: CAD $1.39</p>
+            <p class="cart-tax">HST: CAD $1.95</p>
+            <p id="cart-total"><strong>Order Total: CAD $31.34</strong></p>
           </div>
+        </div>
+      </section>
+      <section class="guide-section">
+        <h2>Featured Section</h2>
+
+        <h3>Sample code:</h3>
+        <pre>
+        <code>
+&lt;section class="featured"&gt;
+    &lt;div class="grid"&gt;
+        &lt;div class="container"&gt;
+            &lt;div class="featured-card"&gt;
+                &lt;a class="block" href="../pages/issues/may2026"&gt;    
+                    &lt;img src="../assets/issues/iz_may26.png" alt="Indiezine: May 2026, product page"&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="featured-card"&gt;
+                &lt;h1 class="featured-text"&gt;
+                    A chat with Unknown Worlds:
+                    What's next for Subnautica 2
+                &lt;/h1&gt;
+                &lt;a class="button-nav" id="read-more" href="../pages/issues/may2026.html"&gt;
+                    Read more
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;   
+    &lt;div class="browse-prompt"&gt;
+        &lt;a href="../pages/rack.html"&gt;
+        Browse all issues here
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/section&gt;      
+        </code>
+        </pre>
+
+        <h3>Rendered element:</h3>
+        <section class="featured">
+            <div class="grid">
+                <div class="container">
+                    <div class="featured-card">
+                        <a class="block" href="../pages/issues/may2026">    
+                            <img src="../assets/issues/iz_may26.png" alt="Indiezine: May 2026, product page">
+                        </a>
+                    </div>
+                    <div class="featured-card">
+                        <h1 class="featured-text">
+                            A chat with Unknown Worlds:
+                            What's next for Subnautica 2
+                        </h1>
+                        <a class="button-nav" id="read-more" href="../pages/issues/may2026.html">
+                            Read more
+                        </a>
+                    </div>
+                </div>
+            </div>   
+            <div class="browse-prompt">
+                <a href="../pages/rack.html">
+                Browse all issues here
+                </a>
+            </div>
+        </section>
+      </section>
+      <section class="guide-section">
+        <h2>Subscription Options</h2>
+      
+        <h3>Sample code:</h3>
+        <pre>
+        <code>
+&lt;div class="sub-cont"&gt;
+  &lt;div class="sub-box"&gt;
+      &lt;h2&gt;3 Months&lt;/h2&gt;
+      &lt;p&gt;$29.99&lt;/p&gt;
+      &lt;button class="button-nav"&gt;Subscribe&lt;/button&gt;
+      &lt;div class="sub-line"&gt;&lt;/div&gt;
+      &lt;ul&gt;
+          &lt;li&gt;Exclusive interviews&lt;/li&gt;
+          &lt;li&gt;Digital access&lt;/li&gt;
+      &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class="sub-box"&gt;
+      &lt;h2&gt;6 Months&lt;/h2&gt;
+      &lt;p&gt;&lt;span class="sub-discount-text"&gt;$59.99&lt;/span&gt; $49.99&lt;/p&gt;
+      &lt;button class="button-nav"&gt;Subscribe&lt;/button&gt;
+      &lt;div class="sub-line"&gt;&lt;/div&gt;
+      &lt;ul&gt;
+          &lt;li&gt;Exclusive interviews&lt;/li&gt;
+          &lt;li&gt;Early digital access&lt;/li&gt;
+      &lt;/ul&gt;           
+  &lt;/div&gt;
+  &lt;div class="sub-box"&gt;
+      &lt;h2&gt;12 Months&lt;/h2&gt;
+      &lt;p&gt;&lt;span class="sub-discount-text"&gt;$199.99&lt;/span&gt; $79.99&lt;/p&gt;
+      &lt;button class="button-nav"&gt;Subscribe&lt;/button&gt;
+      &lt;div class="sub-line"&gt;&lt;/div&gt;
+      &lt;ul&gt;
+          &lt;li&gt;Exclusive interviews&lt;/li&gt;
+          &lt;li&gt;Early digital access&lt;/li&gt;
+          &lt;li&gt;Indie game discounts&lt;/li&gt;
+      &lt;/ul&gt;           
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code>
+        </pre>
+
+        <h3>Rendered element:</h3>
+        <div class="sub-cont">
+          <div class="sub-box">
+              <h2>3 Months</h2>
+              <p>$29.99</p>
+              <button class="button-nav">Subscribe</button>
+              <div class="sub-line"></div>
+              <ul>
+                  <li>Exclusive interviews</li>
+                  <li>Digital access</li>
+              </ul>
+          </div>
+          <div class="sub-box">
+              <h2>6 Months</h2>
+              <p><span class="sub-discount-text">$59.99</span> $49.99</p>
+              <button class="button-nav">Subscribe</button>
+              <div class="sub-line"></div>
+              <ul>
+                  <li>Exclusive interviews</li>
+                  <li>Early digital access</li>
+              </ul>           
+          </div>
+          <div class="sub-box">
+              <h2>12 Months</h2>
+              <p><span class="sub-discount-text">$199.99</span> $79.99</p>
+              <button class="button-nav">Subscribe</button>
+              <div class="sub-line"></div>
+              <ul>
+                  <li>Exclusive interviews</li>
+                  <li>Early digital access</li>
+                  <li>Indie game discounts</li>
+              </ul>           
+          </div>
+        </div>
+      </section>
+      <section class="guide-section">
+        <h2>Contact Portal</h2>
+
+        <h3>Sample code:</h3>
+        <pre>
+        <code>
+&lt;section class="contact-portal"&gt;
+  &lt;h1 class="plan-heading"&gt;
+      Get in touch!
+  &lt;/h1&gt;
+  &lt;a class="button-nav" href="contact.html"&gt;
+      Contact Portal
+  &lt;/a&gt;
+  &lt;div class="grid"&gt;
+      &lt;div class="container"&gt;
+          &lt;div class="social-item-card"&gt;
+            &lt;img class="social-icon" src="../assets/youtube.png" alt="Youtube logo, Indiezine Youtube page"&gt;
+            &lt;img class="social-icon" src="../assets/insta.png" alt="Instagram logo, Indiezine Instagram page"&gt;
+            &lt;img class="social-icon" src="../assets/discord.png" alt="Discord logo, Indiezine Discord server"&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;   
+        </code>
+        </pre>
+
+        <h3>Rendered element:</h3>
+        <section class="contact-portal">
+          <h1 class="plan-heading">
+              Get in touch!
+          </h1>
+          <a class="button-nav" href="contact.html">
+              Contact Portal
+          </a>
+          <div class="grid">
+              <div class="container">
+                  <div class="social-item-card">
+                    <img class="social-icon" src="../assets/youtube.png" alt="Youtube logo, Indiezine Youtube page">
+                    <img class="social-icon" src="../assets/insta.png" alt="Instagram logo, Indiezine Instagram page">
+                    <img class="social-icon" src="../assets/discord.png" alt="Discord logo, Indiezine Discord server">
+                  </div>
+              </div>
+          </div>
+        </section>
+      </section>
+      <section class="guide-section">
+        <h2>Contact Form</h2>
+
+        <h3>Sample code:</h3>
+        <pre>
+        <code>
+&lt;form id="contact-form"&gt;
+    &lt;fieldset id="contact-fields"&gt;
+        &lt;h1 id="contact-header"&gt;Contact Form&lt;/h1&gt;
+        &lt;div class="text-input-split"&gt;
+            &lt;input type="text" class="text-input contact-text-input" id="contact-name" placeholder="Name"&gt;
+            &lt;input type="text" class="text-input contact-text-input" id="contact-email" placeholder="Email"&gt;
+        &lt;/div&gt;
+        &lt;input type="text" class="text-input contact-text-input" id="subject" placeholder="Subject"&gt;
+        &lt;textarea class="text-input contact-text-input" id="message" placeholder="Message" rows="6" cols="50" &gt;&lt;/textarea&gt;
+        &lt;button id="contact-submit" class="button-nav" type="submit"&gt;Submit&lt;/button&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+        </code>
+        </pre>
+
+        <h3>Rendered element:</h3>
+        <form id="contact-form">
+          <fieldset id="contact-fields">
+              <h1 id="contact-header">Contact Form</h1>
+              <div class="text-input-split">
+                  <input type="text" class="text-input contact-text-input" id="contact-name" placeholder="Name">
+                  <input type="text" class="text-input contact-text-input" id="contact-email" placeholder="Email">
+              </div>
+              <input type="text" class="text-input contact-text-input" id="subject" placeholder="Subject">
+              <textarea class="text-input contact-text-input" id="message" placeholder="Message" rows="6" cols="50" ></textarea>
+              <button id="contact-submit" class="button-nav" type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+      <section class="guide-section">
+        <h2>Cart Item List</h2>
+
+        <h3>Sample code:</h3>
+        <pre>
+        <code>
+&lt;div id="cart-page-item-container"&gt;
+    &lt;div class="cart-item cart-page-div"&gt;
+        &lt;div class="cart-item-desc"&gt;
+            &lt;img class="cart-page-item-image" src="../assets/issues/iz_apr26.png" alt="IndieZine: April 2026"&gt;
+            &lt;p class="cart-item-name"&gt;IndieZine: April 2026 &lt;i class="cart-item-quantity"&gt;(-  1  +)&lt;/i&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;p class="cart-item-price"&gt;$13.99&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="cart-item cart-page-div"&gt;
+        &lt;div class="cart-item-desc"&gt;
+            &lt;img class="cart-page-item-image" src="../assets/issues/iz_feb26.png" alt="IndieZine February 2026 Featuring Mewgenics"&gt;
+            &lt;p class="cart-item-name"&gt;IndieZine: February 2026 &lt;i class="cart-item-quantity"&gt;(-  1  +)&lt;/i&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;p class="cart-item-price"&gt;$13.99&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </code>
+        </pre>
+
+        <h3>Rendered element:</h3>
+        <div id="cart-page-item-container">
+            <div class="cart-item cart-page-div">
+                <div class="cart-item-desc">
+                    <img class="cart-page-item-image" src="../assets/issues/iz_apr26.png" alt="IndieZine: April 2026">
+                    <p class="cart-item-name">IndieZine: April 2026 <i class="cart-item-quantity">(-  1  +)</i></p>
+                </div>
+                <p class="cart-item-price">$13.99</p>
+            </div>
+            <div class="cart-item cart-page-div">
+                <div class="cart-item-desc">
+                    <img class="cart-page-item-image" src="../assets/issues/iz_feb26.png" alt="IndieZine February 2026 Featuring Mewgenics">
+                    <p class="cart-item-name">IndieZine: February 2026 <i class="cart-item-quantity">(-  1  +)</i></p>
+                </div>
+                <p class="cart-item-price">$13.99</p>
+            </div>
+        </div>
+      </section>
+      <section class="guide-section">
+        <h2>Order Summary</h2>
+
+        <h3>Sample code:</h3>
+        <pre>
+        <code>
+&lt;div id="cart-page-total" class="cart-page-div"&gt;
+    &lt;p id="order-sum-text"&gt;Order Summary&lt;/p&gt;
+    &lt;p id="cart-subtotal"&gt;Subtotal: CAD $27.98&lt;/p&gt;
+    &lt;a id="checkout-button" href="checkout.html"&gt;
+        Checkout
+    &lt;/a&gt;
+&lt;/div&gt;
+        </code>
+        </pre>
+
+        <h3>Rendered element:</h3>
+        <div id="cart-page-total" class="cart-page-div">
+            <p id="order-sum-text">Order Summary</p>
+            <p id="cart-subtotal">Subtotal: CAD $27.98</p>
+            <a id="checkout-button" href="checkout.html">
+                Checkout
+            </a>
         </div>
       </section>
     </div>
@@ -382,7 +700,7 @@
         </pre>
 
         <h3>Rendered element:</h3>
-        <a class="logo-image" href="#"><img src="assets/lbh_logo.png" alt="LBH Logo"></a>
+        <a class="logo-image" href="#"><img src="../assets/lbh_logo.png" alt="LBH Logo"></a>
       </section>
 
       <section class="guide-section">
